@@ -1,3 +1,8 @@
 .item {
     color: lime;
+
+}
+.item img {
+    height: 80px;
+    border-radius: 60px;
 }
