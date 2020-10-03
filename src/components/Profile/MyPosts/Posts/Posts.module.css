@@ -6,3 +6,9 @@
     height: 80px;
     border-radius: 60px;
 }
+
+.postMessage {
+    right: 100px;
+    top: 200px;
+
+}
