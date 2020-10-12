@@ -1,5 +1,5 @@
 .item {
-    color: lime;
+    color: royalblue;
 
 }
 .item img {
@@ -8,7 +8,8 @@
 }
 
 .postMessage {
-    right: 100px;
+    left: 100px;
     top: 200px;
 
 }
+
