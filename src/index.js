@@ -15,7 +15,6 @@ let rerenderEntireTree = (state) => {
             <StoreContext.Provider value={store}/>
             <React.StrictMode>
                 <Provider store = {store}>
-                {/*<App state={state} dispatch = {store.dispatch.bind(store)} store = {store}/>*/}
                 <App/>
                 </Provider>
             </React.StrictMode>
