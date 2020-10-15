@@ -13,7 +13,10 @@ const ProfileInfo = (props) => {
                 <img src="https://www.andreasreiterer.at/wp-content/uploads/2017/11/react-logo-825x510.jpg"/>
             </div>
             <div className={s.DescriptionBlock}>
-                <img src={props.profile.photos.large}/>
+                <img src={props.profile.photos.large} />
+                <div>{props.profile.contacts.vk}</div>
+                <div>{props.profile.contacts.instagram}</div>
+                <div>{props.profile.lookingForAJobDescription}</div>
                 ava + description
             </div>
         </div>
