@@ -1,13 +1,21 @@
 import React from 'react';
 import s from './ProfileInfo.module.css'
+import Preloader from "../../common/Preloader/Preloader";
 
-const ProfileInfo = () => {
+const ProfileInfo = (props) => {
+    if (!props.profile) {
+        return <Preloader/>
+    }
+
     return (
         <div>
             <div>
                 <img src="https://www.andreasreiterer.at/wp-content/uploads/2017/11/react-logo-825x510.jpg"/>
             </div>
-            <div className={s.DescriptionBlock}> ava + description</div>
+            <div className={s.DescriptionBlock}>
+                <img src={props.profile.photos.large}/>
+                ava + description
+            </div>
         </div>
     )
 }
