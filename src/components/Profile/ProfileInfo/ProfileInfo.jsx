@@ -18,7 +18,7 @@ debugger
                 <div>{props.profile.contacts.vk}</div>
                 <div>{props.profile.contacts.instagram}</div>
                 <div>{props.profile.lookingForAJobDescription}</div>
-                <ProfileStatus status={"Hello my friends"}/>
+                <ProfileStatus status={props.status} updateStatus = {props.updateStatus}/>
             </div>
         </div>
     )
