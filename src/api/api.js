@@ -24,7 +24,7 @@ export const usersAPI = {
         return instance.delete(`follow/${userId}`)
     },
     getProfile(userId){
-        return instance.get(`profile/` + userId)
+        return profileAPI.getProfile(userId);
     }
 }
 
@@ -41,7 +41,7 @@ export const profileAPI = {
 }
 
 export const authAPI = {
-    me () {
+    me() {
         return instance.get(`auth/me`)
     }
 }

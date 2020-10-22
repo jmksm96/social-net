@@ -7,7 +7,6 @@ const ProfileInfo = (props) => {
     if (!props.profile) {
         return <Preloader/>
     }
-debugger
     return (
         <div>
             {/*<div>*/}
@@ -18,7 +17,7 @@ debugger
                 <div>{props.profile.contacts.vk}</div>
                 <div>{props.profile.contacts.instagram}</div>
                 <div>{props.profile.lookingForAJobDescription}</div>
-                <ProfileStatus status={props.status} updateStatus = {props.updateStatus}/>
+                <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
             </div>
         </div>
     )
