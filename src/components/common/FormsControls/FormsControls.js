@@ -6,7 +6,7 @@ import styles from './FormsControls.module.css'
     return (
         <div className={styles.formControl + " " + (hasError ? styles.error: " ")}>
             <div>
-                {props.children}/>
+                {props.children}
             </div>
             {hasError && <span>{meta.error}</span>}
         </div>
