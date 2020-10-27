@@ -3,21 +3,18 @@ import s from './ProfileInfo.module.css'
 import Preloader from "../../common/Preloader/Preloader";
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 
-const ProfileInfo = (props) => {
-    if (!props.profile) {
+const ProfileInfo = ({profile, status, updateStatus}) => {
+    if (!profile) {
         return <Preloader/>
     }
     return (
         <div>
-            {/*<div>*/}
-            {/*    <img src="https://www.andreasreiterer.at/wp-content/uploads/2017/11/react-logo-825x510.jpg"/>*/}
-            {/*</div>*/}
             <div className={s.DescriptionBlock}>
-                <img src={props.profile.photos.large} />
-                <div>{props.profile.contacts.vk}</div>
-                <div>{props.profile.contacts.instagram}</div>
-                <div>{props.profile.lookingForAJobDescription}</div>
-                <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
+                <img src={profile.photos.large}/>
+                <div>{profile.contacts.vk}</div>
+                <div>{profile.contacts.instagram}</div>
+                <div>{profile.lookingForAJobDescription}</div>
+                <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
             </div>
         </div>
     )
